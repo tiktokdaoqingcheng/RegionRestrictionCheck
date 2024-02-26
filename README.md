@@ -4,7 +4,7 @@
 <a href="/LICENSE"><img src="https://img.shields.io/badge/license-GPL-blue.svg" alt="license" /></a>  
 </p>
 
-## 改版流媒体检测脚本
+## xykt/RegionRestrictionCheck版流媒体检测脚本
 
 2024/01/01 21:00 增加DNS/原生解锁检测机制
 
@@ -41,7 +41,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/huvp-z/RegionRestrictionCheck/
 ````
 
 ## 脚本介绍
-本脚本基于[CoiaPrant/MediaUnlock_Test](https://github.com/CoiaPrant/MediaUnlock_Test)代码进行修改
+本脚本基于[CoiaPrant/MediaUnlock_Test](https://github.com/xykt/RegionRestrictionCheck)代码进行修改
 
 **支持OS/Platform：CentOS 6+, Ubuntu 14.04+, Debian 8+, MacOS, Android with Termux**
 
