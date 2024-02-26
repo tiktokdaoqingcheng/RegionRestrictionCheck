@@ -4211,7 +4211,7 @@ function Goodbye() {
         echo -e "LTC: LQD4S6Y5bu3bHX6hx8ASsGHVfaqFGFNTbx"
         echo -e "========================================================="
     else
-        echo -e "${Font_Green}本次测试已结束，感谢使用此脚本 ${Font_Suffix}"
+        echo -e "${Font_Green}本次原生解锁测试已结束，感谢使用此脚本 ${Font_Suffix}"
         echo -e "${Font_Yellow}检测脚本当天运行次数: ${TodayRunTimes}; 共计运行次数: ${TotalRunTimes} ${Font_Suffix}"
         echo -e ""
     fi
@@ -4472,8 +4472,8 @@ function RunScript() {
             echo ""
             echo -e "${Font_Red}**************************${Font_Suffix}"
             echo -e "${Font_Red}*                        *${Font_Suffix}"
-            echo -e "${Font_Red}*${Font_Suffix} 广告招租               ${Font_Red}*${Font_Suffix}"
-            echo -e "${Font_Red}*${Font_Suffix} 请联系：@xythebot ${Font_Red}*${Font_Suffix}"
+            echo -e "${Font_Red}*${Font_Suffix} TIKTOK原生运营线路 ${Font_Red}*${Font_Suffix}"
+            echo -e "${Font_Red}*${Font_Suffix} 请联系：@hu_huhuhu ${Font_Red}*${Font_Suffix}"
             echo -e "${Font_Red}*                        *${Font_Suffix}"
             echo -e "${Font_Red}**************************${Font_Suffix}"
 
