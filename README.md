@@ -37,37 +37,8 @@
 **使用脚本前请确认curl已安装**
 
 ````bash
-bash <(curl -L -s media.ispvps.com)
+bash <(curl -Ls https://raw.githubusercontent.com/huvp-z/RegionRestrictionCheck/master/check.sh)
 ````
-
-##### 只检测IPv4结果：
-````bash
-bash <(curl -L -s media.ispvps.com) -M 4
-````
-
-##### 只检测IPv6结果：
-````bash
-bash <(curl -L -s media.ispvps.com) -M 6
-````
-
-##### 指定检测的网卡名称：
-````bash
-bash <(curl -L -s media.ispvps.com) -I eth0
-````
-
-##### 选择脚本语言为英文：
-````bash
-bash <(curl -L -s media.ispvps.com) -E
-````
-
-**或者直接运行以下Docker命令** (兼容ARM架构)
-````docker
-docker run --rm -ti --net=host xykt/regioncheck && docker rmi xykt/regioncheck
-````
-
-## For English user please see
-### [Introduction](https://github.com/lmc999/RegionRestrictionCheck/blob/main/README_EN.md)
-
 
 ## 脚本介绍
 本脚本基于[CoiaPrant/MediaUnlock_Test](https://github.com/CoiaPrant/MediaUnlock_Test)代码进行修改
