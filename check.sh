@@ -62,9 +62,9 @@ fi
 
 UA_Browser="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36"
 UA_Dalvik="Dalvik/2.1.0 (Linux; U; Android 9; ALP-AL00 Build/HUAWEIALP-AL00)"
-Media_Cookie=$(curl -s --retry 3 --max-time 10 "https://raw.githubusercontent.com/xykt/RegionRestrictionCheck/main/cookies")
-IATACode=$(curl -s --retry 3 --max-time 10 "https://raw.githubusercontent.com/xykt/RegionRestrictionCheck/main/reference/IATACode.txt")
-IATACode2=$(curl -s --retry 3 --max-time 10 "https://raw.githubusercontent.com/xykt/RegionRestrictionCheck/main/reference/IATACode2.txt" 2>&1)
+Media_Cookie=$(curl -s --retry 3 --max-time 10 "https://raw.githubusercontent.com/huvp-z/RegionRestrictionCheck/main/cookies")
+IATACode=$(curl -s --retry 3 --max-time 10 "https://raw.githubusercontent.com/huvp-z/RegionRestrictionCheck/main/reference/IATACode.txt")
+IATACode2=$(curl -s --retry 3 --max-time 10 "https://raw.githubusercontent.com/huvp-z/RegionRestrictionCheck/main/reference/IATACode2.txt" 2>&1)
 TVer_Cookie="Accept: application/json;pk=BCpkADawqM0_rzsjsYbC1k1wlJLU4HiAtfzjxdUmfvvLUQB-Ax6VA-p-9wOEZbCEm3u95qq2Y1CQQW1K9tPaMma9iAqUqhpISCmyXrgnlpx9soEmoVNuQpiyGsTpePGumWxSs1YoKziYB6Wz"
 
 countRunTimes() {
@@ -2208,7 +2208,7 @@ function MediaUnlockTest_NetflixCDN() {
     local CDN_ISP=$(curl $useNIC $xForward --user-agent "${UA_Browser}" -s --max-time 20 "https://api.ip.sb/geoip/$CDNIP" 2>&1 | python -m json.tool 2>/dev/null | grep 'isp' | cut -f4 -d'"')
     local iata=$(echo $CDNAddr | cut -f3 -d"-" | sed 's/.\{3\}$//' | tr [:lower:] [:upper:])
 
-    #local IATACode2=$(curl -s --retry 3 --max-time 10 "https://raw.githubusercontent.com/xykt/RegionRestrictionCheck/main/reference/IATACode2.txt" 2>&1)
+    #local IATACode2=$(curl -s --retry 3 --max-time 10 "https://raw.githubusercontent.com/huvp-z/RegionRestrictionCheck/main/reference/IATACode2.txt" 2>&1)
 
     local isIataFound1=$(echo "$IATACode" | grep $iata)
     local isIataFound2=$(echo "$IATACode2" | grep $iata)
@@ -4224,7 +4224,7 @@ function ScriptTitle() {
         echo -e " [Stream Platform & Game Region Restriction Test]"
         echo ""
         echo -e "${Font_Green}Github Repository :${Font_Suffix} ${Font_Yellow} https://github.com/lmc999/RegionRestrictionCheck ${Font_Suffix}"
-        echo -e "${Font_Green}Github Modify Fork:${Font_Suffix} ${Font_Yellow} https://github.com/xykt/RegionRestrictionCheck ${Font_Suffix}"
+        echo -e "${Font_Green}Github Modify Fork:${Font_Suffix} ${Font_Yellow} https://github.com/huvp-z/RegionRestrictionCheck ${Font_Suffix}"
         echo -e "${Font_Purple}Supporting OS: CentOS 6+, Ubuntu 14.04+, Debian 8+, MacOS, Android (Termux), iOS (iSH)${Font_Suffix}"
         echo ""
         echo -e " ** Test Starts At: $(date)"
@@ -4233,7 +4233,7 @@ function ScriptTitle() {
         echo -e " [流媒体平台及游戏区域限制测试]"
         echo ""
         echo -e "${Font_Green}项目地址${Font_Suffix} ${Font_Yellow}https://github.com/lmc999/RegionRestrictionCheck ${Font_Suffix}"
-        echo -e "${Font_Green}改版地址${Font_Suffix} ${Font_Yellow}https://github.com/xykt/RegionRestrictionCheck ${Font_Suffix}"
+        echo -e "${Font_Green}改版地址${Font_Suffix} ${Font_Yellow}https://github.com/huvp-z/RegionRestrictionCheck ${Font_Suffix}"
         echo -e "${Font_Purple}脚本适配OS: CentOS 6+, Ubuntu 14.04+, Debian 8+, MacOS, Android (Termux), iOS (iSH)${Font_Suffix}"
         echo ""
         echo -e " ** 测试时间: $(date)"
@@ -4244,12 +4244,12 @@ function ScriptTitle() {
 
 function Start() {
 	  echo -e ""
-    #bash <(curl -s https://raw.githubusercontent.com/xykt/RegionRestrictionCheck/main/reference/AD/AD${ADN})
-    bash <(curl -s https://raw.githubusercontent.com/xykt/RegionRestrictionCheck/main/reference/AD/ADDV)
+    #bash <(curl -s https://raw.githubusercontent.com/huvp-z/RegionRestrictionCheck/main/reference/AD/AD${ADN})
+    bash <(curl -s https://raw.githubusercontent.com/huvp-z/RegionRestrictionCheck/main/reference/AD/ADDV)
 	  echo -e ""
-    bash <(curl -s https://raw.githubusercontent.com/xykt/RegionRestrictionCheck/main/reference/AD/AD2)
+    bash <(curl -s https://raw.githubusercontent.com/huvp-z/RegionRestrictionCheck/main/reference/AD/AD2)
 	  echo -e ""
-    bash <(curl -s https://raw.githubusercontent.com/xykt/RegionRestrictionCheck/main/reference/AD/AD)
+    bash <(curl -s https://raw.githubusercontent.com/huvp-z/RegionRestrictionCheck/main/reference/AD/AD)
 	  echo -e ""
     if [[ "$language" == "e" ]]; then
         echo -e "${Font_Blue}Please Select Test Region or Press ENTER to Test All Regions${Font_Suffix}"
