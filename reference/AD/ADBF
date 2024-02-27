@@ -1,5 +1,4 @@
 #!/bin/bash
-shopt -s expand_aliases
 Font_Black="\033[30m"
 Font_Red="\033[31m"
 Font_Green="\033[32m"
@@ -9,7 +8,6 @@ Font_Purple="\033[35m"
 Font_SkyBlue="\033[36m"
 Font_White="\033[37m"
 Font_Suffix="\033[0m"
-
 echo -e "${Font_SkyBlue}【TIKTOK运营线路】${Font_Suffix}"
 echo -e "================================================"
 echo -e "${Font_Red}原生ISP 助力TIKTOK出海${Font_Suffix}"
@@ -19,5 +17,5 @@ echo -e "${Font_Green}✅ 台湾isp原生ip ${Font_Suffix}"
 echo -e "${Font_Green}✅ 全解锁本土服务 ${Font_Suffix}"
 echo -e "${Font_Green}✅ Tiktok运营数据好 ${Font_Suffix}"
 echo -e "${Font_SkyBlue}全中转隧道，稳定高速${Font_Suffix}"
-echo -e "${Font_Red}更多套餐优惠请访问 https://t.me/hu_huhuhu${Font_Suffix}"
+echo -e "${Font_Red}更多套餐优惠请访问 https://t.me/tiktokdqc${Font_Suffix}"
 echo -e "================================================"
