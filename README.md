@@ -37,7 +37,7 @@
 **使用脚本前请确认curl已安装**
 
 ````bash
-bash <(curl -Ls https://raw.githubusercontent.com/huvp-z/RegionRestrictionCheck/master/check.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/tiktokdaoqingcheng/RegionRestrictionCheck/master/check.sh)
 ````
 
 ## 脚本介绍
